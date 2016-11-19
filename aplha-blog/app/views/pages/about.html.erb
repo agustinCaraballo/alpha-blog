@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title>Hello world</title>
+<body>
+<style>
+div.generic {background:#D8FBD6;border:1px dotted black;padding:8px;}
+div.generic ul {color:green;}
+div.mainbody {background:#D8ABD6;border:1px dotted black;padding:8px;}
+div.mainbody ul {color:red;}
+</style>
+
+<div class="generic">
+<h1 align="center" > About </h1>
+</div>
+<div class="mainbody">
+<p align="left" > Welcome to my first Rails page with nothing to show. </p>
+<p align="left" > Only thing I know is that is <%= Time.now.strftime("%H:%M:%S") %> in the night </p>
+<p align="left"> And you can go to my other page for about <%= link_to "Home", root_path %> </p>
+</div>
+</body>
+</html>
