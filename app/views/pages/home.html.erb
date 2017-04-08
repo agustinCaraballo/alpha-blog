@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Alpha blog</title>
-<style>
-.header {
-  background-color: gray;
-  color: white;
-}
-.content {
-  float:left;
-  width: 45%;
-  border-style: solid;
-  margin: 0 0 1 0px 10px;
-
-}
-.footer {
-  clear:left;
-  align-items: center;
-}
-
-</style>
-</head>
-<body>
-<div class="header">
-<h1 align-items: center >This is a Heading</h1>
+<div class="center jumbotron">
+  <h1>Alpha Blog</h1>
+  <%= link_to "Sign up now","#", class: "btn btn-danger btn-lg btn-xlarge"%>
 </div>
-<div class="content">
-<p>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-</div>
-<div class="content">
-<p>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-</div>
-<div class="footer">
-<%= link_to "Alpha Blog", articles_path %> | <%= link_to "About", about_path %>
-</div>
-
-</body>
-</html>
