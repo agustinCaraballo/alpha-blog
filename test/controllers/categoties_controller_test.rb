@@ -5,7 +5,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     @user = User.create(username: "john", email: "john@example.com",password: "password",admin: true)
   end
   test "should get categories index" do
-    get "/categories/index"
+    get "/categories"
     assert_response :success
   end
   test "should get new" do
@@ -14,7 +14,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
   test "should get show" do
-    get "/categories/show", params: {id: @category.id}
+    get "/categories/", params: {id: @category.id}
     assert_response :success
   end
 end
